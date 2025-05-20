@@ -23,32 +23,32 @@ window.addEventListener("resize", handleResize)
 
 const gallery = document.querySelector(".gallery");
 
+const modal = document.createElement('dialog');
+modal.innerHTML = '<img><button class="close-viewer">X</button>';
+document.body.appendChild(modal);
+
+const modalImg = modal.querySelector('img');
+const closeBtn = modal.querySelector('.close-viewer');
+
 gallery.addEventListener("click", (event) => {
-    const img = event.target.closest ('img');
+    const img = event.target.closest('img');
 
-    const src = img.getAttributes('src');
+    const src = img.getAttribute('src');
     const alt = img.getAttribute('alt') || '';
+    const full = src.split('-')[0] + '-full.jpeg';
+
+    modalImg.setAttribute('src', full);
+    modalImg.setAttribute('alt', alt);
+
+    modal.showModal();
 });
 
-
-
-
-
-
-
-//Close modal on button click
-
-closeButton.addEventListener('click', () => {
-    modal.close();
-    });
-
-//Close modal if clicking outside
-modal.addEventListener('click', (event) => {
+closeBtn.addEventListener('click', () => {
     modal.close();
 });
 
 modal.addEventListener('click', (event) => {
-    if(event === modal) {
+    if (event.target === modal) {
         modal.close();
     }
 });
