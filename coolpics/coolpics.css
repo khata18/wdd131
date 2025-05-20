@@ -75,6 +75,40 @@ footer{
     margin: 0 auto;
     text-align: center;
 }
+/* ----------------------------- */
+.hide {
+	display: none;
+}
+
+.close-viewer{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    margin: 0 auto;
+    position: absolute;
+    top: 20vh;
+    max-height: 100%;
+    z-index: 10;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------- */
 
 @media screen and (min-width: 700px) and (max-width: 1000px){
     #content1{
@@ -89,9 +123,7 @@ footer{
     text-align: center;
     }
 
-    a{
-        display: none;
-    }
+ 
 
     .gallery{
         display: grid;
@@ -117,9 +149,6 @@ footer{
     text-align: center;
     }
 
-    button{
-        display: none;
-    }
 
     .gallery{
         display: grid;
@@ -127,7 +156,7 @@ footer{
         gap: 10px;
     }
 
-   nav{
+   menu{
     display: flex;
     justify-content: center;
     justify-content: space-around;
