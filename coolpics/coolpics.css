@@ -94,7 +94,6 @@ dialog {
 
 dialog img {
   display: block;
-  width: 90%;
   max-height: 100%;
   margin: 20vh auto 0 auto;
   object-fit: contain;
@@ -103,7 +102,7 @@ dialog img {
 
 .close-viewer {
   position: absolute;
-  right: 5%;
+  right: 0%;
   top: 20vh;
   background: none;
   color: white;
