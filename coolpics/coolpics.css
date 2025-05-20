@@ -113,22 +113,6 @@ dialog img {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ----------------------------- */
 
 @media screen and (min-width: 700px) and (max-width: 1000px){
@@ -177,11 +161,15 @@ dialog img {
         gap: 10px;
     }
 
-   menu{
+   .menu{
     display: flex;
     justify-content: center;
     justify-content: space-around;
     padding: 20px;
+   }
+
+   .hide{
+    display: none;
    }
 
     #content3{
