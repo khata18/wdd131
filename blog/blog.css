@@ -90,3 +90,18 @@ a {
 p{
     font-family: Helvetica, Arial, sans-serif;
 }
+
+.skiptocontent a {
+  position: absolute;
+  left: -9999px;
+}
+
+.skiptocontent a:focus {
+  left: 0;
+  top: 0;
+  background: yellow;
+  color: black;
+  padding: 8px;
+  z-index: 1000;
+}
+
