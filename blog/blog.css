@@ -46,7 +46,9 @@ main{
     grid-column: 1/2;
     grid-row: 1/2;
     text-align: right;
-    margin: 0 100px;
+    margin: 5px 100px;
+
+    border-right: 2px solid #EFC69B;
 }
 
 #left2{
@@ -54,6 +56,7 @@ main{
     grid-row: 2/3;
     text-align: right;
     margin: 0 100px;
+    border-right: 2px solid #EFC69B;
 }
 
 #book1{
