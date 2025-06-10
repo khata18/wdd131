@@ -1,85 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Kosei Hatakenaka" />
-    <meta
-        name="description"
-        content="Credit Card Form" />
+    <meta name="description" content="Credit Card Form" />
     <title>Credit Card Form</title>
     <link href="styles.css" rel="stylesheet" />
     <script defer src="card.js"></script>
-</head>
-<body>
-
-  <div class="payment-container">
-    <div class="payment-header">
-      <div class="total">TOTAL: <span>$199</span></div>
-      <img src="card-icon.png" alt="Card Icon" class="card-icon" />
-    </div>
-
-    <form class="payment-form">
-      <!-- Card Number -->
-      <div class="form-group">
-        <label for="card-number">Card Number</label>
-        <input
-          type="text"
-          id="card-number"
-          name="cardNumber"
-          placeholder="1234 5678 9010 1020"
-          maxlength="19"
-        />
+  </head>
+  <body>
+      <div id = front-card>
+      <div class="payment-header">
+        <div class="total">TOTAL: <span>$199</span></div>
       </div>
+      <img src="card-icon.png" alt="Card Icon" class="card-icon" />
 
-      <!-- Card Holder / Expiration / CVV Row -->
-      <div class="form-row">
-        <div class="form-group flex-2">
-          <label for="card-holder">Card Holder</label>
+      <form id="payment-form">
+        <!-- Card Number -->
+        <div id = "number-card">
+          <label for="name-card">Card Number</label>
           <input
             type="text"
-            id="card-holder"
-            name="cardHolder"
-            placeholder="John Doe"
+            id="card-number"
+            name="cardNumber"
+            placeholder="1234 5678 9010 1020"
+            maxlength="19"
           />
         </div>
 
-        <div class="form-group">
-          <label>Expiration</label>
-          <div class="expiry">
+        <!-- Card Holder / Expiration / CVV Row -->
+        <div class="form-row">
+          <div class="hcard">
+            <label for="card-holder">Card Holder</label>
             <input
               type="text"
-              name="expMonth"
-              placeholder="MM"
-              maxlength="2"
+              id="card-holder"
+              name="cardHolder"
+              placeholder="John Doe"
             />
+          </div>
+          </div>
+
+          <div class="expiry">
+            <label>Expiration</label>
+            <div class="expiry">
+              <input
+                type="text"
+                name="expMonth"
+                placeholder="MM"
+                maxlength="2"
+              />
+              <input
+                type="text"
+                name="expYear"
+                placeholder="YY"
+                maxlength="2"
+              />
+            </div>
+          </div>
+          </div>
+
+          <div class="form-group cvv">
+            <label for="cvv">CVC/CVV</label>
             <input
               type="text"
-              name="expYear"
-              placeholder="YY"
-              maxlength="2"
+              id="cvv"
+              name="cvv"
+              placeholder="XXX"
+              maxlength="3"
             />
           </div>
         </div>
 
-        <div class="form-group cvv">
-          <label for="cvv">CVC/CVV</label>
-          <input
-            type="text"
-            id="cvv"
-            name="cvv"
-            placeholder="XXX"
-            maxlength="3"
-          />
+        <!-- Submit Button -->
+        <div class="form-row submit-row">
+          <button type="submit">Submit</button>
         </div>
-      </div>
-
-      <!-- Submit Button -->
-      <div class="form-row submit-row">
-        <button type="submit">Submit</button>
-      </div>
-    </form>
-  </div>
-
-</body>
+      </form>
+    </div>
+  </body>
 </html>
