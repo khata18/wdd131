@@ -38,6 +38,7 @@ img{
   grid-row: 3/4;
 }
 
-.expiry{
-  
+.exp {
+  grid-column: 2/3;
+  grid-row: 1/2;
 }

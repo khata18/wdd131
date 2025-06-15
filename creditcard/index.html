@@ -11,73 +11,62 @@
   </head>
   <body>
       <div id = front-card>
-      <div class="payment-header">
+        <div class="payment-header">
         <div class="total">TOTAL: <span>$199</span></div>
       </div>
       <img src="card-icon.png" alt="Card Icon" class="card-icon" />
 
-      <form id="payment-form">
-        <!-- Card Number -->
-        <div id = "number-card">
-          <label for="name-card">Card Number</label>
-          <input
-            type="text"
-            id="card-number"
-            name="cardNumber"
-            placeholder="1234 5678 9010 1020"
-            maxlength="19"
-          />
-        </div>
+  <form id="payment-form">
+  <!-- Card Number -->
+  <div id="number-card">
+    <label for="card-number">Card Number</label>
+    <input
+      type="text"
+      id="card-number"
+      name="cardNumber"
+      placeholder="1234 5678 9010 1020"
+      maxlength="19"
+    />
+  </div>
 
-        <!-- Card Holder / Expiration / CVV Row -->
-        <div class="form-row">
-          <div class="hcard">
-            <label for="card-holder">Card Holder</label>
-            <input
-              type="text"
-              id="card-holder"
-              name="cardHolder"
-              placeholder="John Doe"
-            />
-          </div>
-          </div>
+  <!-- Card Holder / Expiration / CVV Row -->
+ 
+    <div class="hcard">
+      <label for="card-holder">Card Holder</label>
+      <input
+        type="text"
+        id="card-holder"
+        name="cardHolder"
+        placeholder="John Doe"
+      />
+    </div>
 
-          <div class="expiry">
-            <label>Expiration</label>
-            <div class="expiry">
-              <input
-                type="text"
-                name="expMonth"
-                placeholder="MM"
-                maxlength="2"
-              />
-              <input
-                type="text"
-                name="expYear"
-                placeholder="YY"
-                maxlength="2"
-              />
-            </div>
-          </div>
-          </div>
+    <div class="exp">
+      <label>Expiration</label>
+      <div class="expiry">
+        <input type="text" name="expMonth" placeholder="MM" maxlength="2" />
+        <input type="text" name="expYear" placeholder="YY" maxlength="2" />
+      </div>
+    </div>
 
-          <div class="form-group cvv">
-            <label for="cvv">CVC/CVV</label>
-            <input
-              type="text"
-              id="cvv"
-              name="cvv"
-              placeholder="XXX"
-              maxlength="3"
-            />
-          </div>
-        </div>
+    <div class="form-group cvv">
+      <label for="cvv">CVC/CVV</label>
+      <input
+        type="text"
+        id="cvv"
+        name="cvv"
+        placeholder="XXX"
+        maxlength="3"
+      />
+    
+  </div>
 
-        <!-- Submit Button -->
-        <div class="form-row submit-row">
-          <button type="submit">Submit</button>
-        </div>
-      </form>
+  <!-- Submit Button -->
+  <div class="form-row submit-row">
+    <button type="submit">Submit</button>
+  </div>
+</form>
+
     </div>
   </body>
 </html>
